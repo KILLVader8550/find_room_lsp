@@ -2,25 +2,68 @@
 <html lang= "en">
     <head>
         <meta charset="UTF-8">
-        <meta name = "viewport" content = "width = device-width", initial-scale="1.0">
+        <meta name = "viewport" content = "width = device-width initial-scale= 1.0">
         <title>Free Room Checkout</title>
     </head> 
     <body>
-        <div id = "navigation_bar">
-            <div id = "logo">
-                <img src="" alt=""> <!--Insert the logo image later-->
+        <div class = "text">
+            <h1>LSP Room Finder</h1>
+            <p>Need a place to study? Instantly check which rooms are free right now.</p>
+        </div>
+        <div id = "Selection">
+            <div class = "time">
+                <div id="clock">00:00</div>
+                <div id="date">Mon, 16th 2025</div>
             </div>
-            <div id = "nav-bottom">
-                <p>This site shows real-tmie room availability at LSP school</p>
-                <p>If you find any bugs or incorrect information in the site, please report us by clicking the below button</p>
-                <button id = "report-btn">Report Issues</button>
-                <p>Developed by KT and Tun, LSP06</p>
-                <p><bold>Contact</bold></p>
-                <!--email, github and ig-->
+            <div class = "dropdown">
+                <label for="Day">Select Day : </label>
+                <select name="Day" id="day">
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                </select>
+                <label for="period">Select Period : </label>
+                <select name="period" id="period">
+                    <option value="1">Period 1 (8:35 - 9:20)</option>
+                    <option value="2">Period 2 (9:25 - 10:10)</option>
+                    <option value="3">Period 3 (10:35 - 11:20)</option>
+                    <option value="4">Period 4 (11:25 - 12:10)</option>
+                    <option value="5">Period 5 (12:15 - 13:00)</option>
+                    <option value="6">Period 6 (13:00 - 13:45)</option>
+                    <option value="7">Period 7 (13:50 - 14:35)</option>
+                    <option value="8">Period 8 (14:45 - 15:30)</option>
+                    <option value="9">Period 9 (15:35 - 16:20)</option>
+                </select>
             </div>
+            <button id = "search">
+                <img src="" alt="Search icon"> <!--Insert magnifying glass icon-->
+            </button>
         </div>
         <div id = "main_board">
+            <h3>List Room</h3>
+            <button id = "refresh">
+                <img src="" alt="Refresh"> <!--Insert refresh icon-->
+            </button>
+            <table id = "roomTable">
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id = "table_content">
 
+                </tbody>
+            </table>
+             <div id = "floor-selection">
+                <button class = "floor">1</button>
+                <button class = "floor">2</button>
+                <button class = "floor">3</button>
+                <button class = "floor">4</button>
+                <button class = "floor">5</button>
+             </div>
         </div>
     </body>
 </html>
