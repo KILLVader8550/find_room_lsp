@@ -29,6 +29,8 @@ p {
 /*-------------------------*/
 .container-1 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 40px;
     background-color: aliceblue;
     margin-top: 20px;
@@ -43,7 +45,6 @@ p {
     align-items: end;
     margin-left: 20px;
     margin-top: 0px;
-    flex: 14;
 }
 
 #clock {
@@ -58,10 +59,17 @@ p {
     font-weight: 500;
 }
 
+.right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    gap: 20px;
+}
+
 .container-select {
     display: flex;
     flex-direction: column;
-    flex: 4;
 }
 
 #weekday {
@@ -86,7 +94,6 @@ p {
 }
 
 .container-search {
-    flex: 1;
     display: flex;
     flex-direction: column-reverse;
 }
