@@ -225,3 +225,119 @@ li a {
 .box {
     margin-top: 0px;
 }
+
+@media (max-width: 390px) {
+.container {
+    margin: 20px 10px;
+}
+
+.container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.container-date-time {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+#clock {
+    font-size: 40px;
+}
+
+#date {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.container-select {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.day, .period{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weekday, #period {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.container-search {
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*-------------------------*/
+.container-2 {
+    padding: 20px;
+}
+
+.title-bar {
+    flex-direction: row;
+}
+
+.scrollview {
+    height: auto;
+    max-height: 200px;
+}
+
+.room {
+    flex-direction: row;
+    align-items: center;
+}
+
+.status {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.container-2-buttom {
+    justify-content: center;
+}
+
+.link-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+}
+
+.page-number {
+    margin: 5px;
+}
+
+/*-------------------------*/
+.container-footer {
+    padding: 20px;
+}
+
+.information {
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0;
+}
+
+.title h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.title p {
+font-size: 14px;
+text-align: center;
+}
+}
