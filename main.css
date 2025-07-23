@@ -167,6 +167,14 @@ p {
     font-size: 12px;
 }
 
+.status.available {
+    background-color: #008c4d;
+}
+
+.status.unavailable {
+    background-color: #ff0015;
+}
+
 .container-2-buttom {
     display: flex;
     flex-direction: row-reverse;
@@ -335,7 +343,7 @@ li a {
 }
 
 .title p {
-font-size: 14px;
-text-align: center;
+    font-size: 14px;
+    text-align: center;
 }
 }
