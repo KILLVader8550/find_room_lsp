@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Free Room Checkout</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 style="margin: 0px;">Room Finder</h1>
+            <p style="margin-top: 15px;">Need a place to study? Instantly check whick room are free right now</p>
+        </div>
+
+        <div class="container-1">
+            <div class="container-date-time">
+                <div id="clock">--:--</div>
+                <div id="date">Loading date...</div>
+                <script src="js/clock.js"></script>
+            </div>
+
+            <div class="right-container">
+                <div class="container-select">
+                    <div class="day">
+                        <label for="weekday" style="font-size: 18px; font-weight: 600;">Day :</label>
+                        <select id="weekday" name="weekday">
+                            <option value="mon">Monday</option>
+                            <option value="tue">Tuesday</option>
+                            <option value="wed">Wednesday</option>
+                            <option value="thu">Thursday</option>
+                            <option value="fri">Friday</option>
+                        </select>
+                    </div>
+                    <div class="period">
+                        <label for="period" style="font-size: 18px; font-weight: 600;">Period :</label>
+                        <select id="period" name="period">
+                            <option value="1">1 (8:35 - 9:20)</option>
+                            <option value="2">2 (9:25 - 10:10)</option>
+                            <option value="3">3 (10:30 - 11:15)</option>
+                            <option value="4">4 (11:20 - 12:05)</option>
+                            <option value="5">5 (12:10 - 12:55)</option>
+                            <option value="6">6 (13:00 - 13:45)</option>
+                            <option value="7">7 (13:50 - 14:35)</option>
+                            <option value="8">8 (14:45 - 15:30)</option>
+                            <option value="9">9 (15:35 - 16:20)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-search">
+                    <button class="circle", id="search">
+                        <img src="icon/ph--magnifying-glass.png" width="25" height="25"/>
+                    </button>
+                    <script src="js/client.js"></script>   
+                </div>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <div class="container-2-header">
+                <div class="title-bar">
+                    <h2>List room</h1>
+                    <button class="circle" style="margin-top: 15px;"><img src="icon/refresh.png" width="25" height="25"/></button>
+                </div>
+                <div class="title-bar">
+                    <p style="margin-top: 0px; color: rgba(202,227,243,255)">Room number</p>
+                    <p style="margin-top: 0px; margin-right: 35px; color: rgba(202,227,243,255)">Status</p>
+                </div>
+            </div>
+
+            <div class="scrollview" id="floorContainer">
+                
+            </div>
+            
+            <div class="container-2-buttom">
+                <nav>
+                    <div class="link-page">
+                        <p style="margin-top: 24px;">Floor</p>
+                        <ul class="page">
+                            <li class="page-number" data-floor="1"><a href="#">1</a></li>
+                            <li class="page-number" data-floor="2"><a href="#">2</a></li>
+                            <li class="page-number" data-floor="3"><a href="#">3</a></li>
+                            <li class="page-number" data-floor="4"><a href="#">4</a></li>
+                        </ul>
+                        <script src="js/floor.js"></script>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="contributer">
+                <p style="margin: 0px; margin-top: 40px">Developed by KT and Tun, LSP06</p>
+                <div class="information">
+                    <div class="box">
+                        <p>Email :</p>
+                        <p>pairaya.sri@gmail.com</p>
+                        <p>kaituiteihau@gmail.com</p>
+                    </div>
+                    <div class="box">
+                        <p>Instagram :</p>
+                        <p>tsususan_016</p>
+                        <p>infpaoi</p>
+                    </div>
+                    <div class="box">
+                        <p>Github :</p>
+                        <p>yumikuri</p>
+                        <p>Fuku</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
