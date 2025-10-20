@@ -105,6 +105,13 @@ p {
     height: 40px;
     background-color: rgba(55,93,150,255); 
     border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.circle:active {
+  transform: scale(0.9);   /* ย่อปุ่มลงเล็กน้อยเวลา click */
+  background: #00a6ff;     /* เปลี่ยนสีเล็กน้อย */
 }
 
 /*-------------------------*/
