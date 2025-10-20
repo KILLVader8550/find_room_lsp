@@ -111,8 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	updateRoomStatuses(periodSelect.value, dayMap[daySelect.value]);
 	});
 
-
-
 	function autoDetectPeriodAndUpdate() {
 		let currentPeriod = getCurrentPeriod();
 		const currentDay = getCurrentDay();
